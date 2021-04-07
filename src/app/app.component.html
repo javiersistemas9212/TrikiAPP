@@ -1,0 +1,80 @@
+<div class="container">
+
+  <div class="row center">
+     <h2>Turno para el jugador {{ turno }}</h2>
+  </div>
+
+</div>
+<div id="tablero" class="container">
+  
+  <div class="row">
+    <div class="col-xs-4 col-lg-4 centerY">
+      <i class="fas fa-comments tamicon"></i>
+      <label>{{ msjsalida }}</label>
+
+    </div>
+    <div class="col-xs-5 col-lg-5">
+   
+    <div class="row center">
+      <button class="pieza" (click)="triquiclic(1)">
+        <label *ngIf="selecX.indexOf(1) != -1">X</label>
+        <label *ngIf="selecO.indexOf(1) != -1">O</label>
+      
+      </button>
+      <button class="pieza" (click)="triquiclic(2)">
+        <label *ngIf="selecX.indexOf(2) != -1">X</label>
+        <label *ngIf="selecO.indexOf(2) != -1">O</label>
+      
+      </button>
+      <button class="pieza" (click)="triquiclic(3)">
+        <label *ngIf="selecX.indexOf(3) != -1">X</label>
+        <label *ngIf="selecO.indexOf(3) != -1">O</label>
+      
+      </button>
+    </div>
+    <div class="row center">
+      <button class="pieza" (click)="triquiclic(4)">
+        <label *ngIf="selecX.indexOf(4) != -1">X</label>
+        <label *ngIf="selecO.indexOf(4) != -1">O</label>    
+      </button>
+      <button class="pieza" (click)="triquiclic(5)">
+        <label *ngIf="selecX.indexOf(5) != -1">X</label>
+        <label *ngIf="selecO.indexOf(5) != -1">O</label>
+      
+      </button>
+      <button class="pieza" (click)="triquiclic(6)">
+        <label *ngIf="selecX.indexOf(6) != -1">X</label>
+        <label *ngIf="selecO.indexOf(6) != -1">O</label>
+      
+      </button>
+    </div>
+    <div class="row center">
+      <button class="pieza" (click)="triquiclic(7)">
+        <label *ngIf="selecX.indexOf(7) != -1">X</label>
+        <label *ngIf="selecO.indexOf(7) != -1">O</label>
+      
+      </button>
+      <button class="pieza" (click)="triquiclic(8)">
+        <label *ngIf="selecX.indexOf(8) != -1">X</label>
+        <label *ngIf="selecO.indexOf(8) != -1">O</label>
+      
+      </button>
+      <button class="pieza" (click)="triquiclic(9)">
+        <label *ngIf="selecX.indexOf(9) != -1">X</label>
+        <label *ngIf="selecO.indexOf(9) != -1">O</label>
+      
+      </button>
+    </div>
+  
+   </div>
+   <div class="col-xs-3 col-lg-3">
+     <label>Elaborado por: Jonathan Legarda</label>     
+     <span>Carvajal</span>
+   </div>
+  </div>
+ 
+   <div class="row center">
+     <a (click)="reiniciar()"><i style="color: white;" class="fas fa-sync tamicon"></i>
+     </a>
+  </div>
+ </div> 
